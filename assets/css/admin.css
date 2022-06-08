@@ -1,0 +1,63 @@
+.lead {
+	font-size: 125%;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.form-control .label {
+	width: 30%;
+	flex-shrink: 0;
+	font-weight: bold;
+}
+
+.form-control .button + .button {
+	margin-left: .25rem;
+}
+
+.form-control .image-select {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+#side-sortables .form-control .image-select {
+	justify-content: center;
+	align-items: center;
+}
+
+.form-control .image-select .thumbnail {
+	width: auto;
+	max-width: 100%;
+	max-height: 10em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	cursor: pointer;
+}
+
+.form-control .image-select .delete {
+	display: none;
+}
+
+.form-control .image-select .thumbnail ~ .delete {
+	display: initial;
+	color: #b32d2e;
+}
+
+.form-control .image-select .thumbnail ~ .add {
+	display: none;
+}
+
+.custom-thumbnail {
+	margin: 0;
+	width: auto;
+	height: auto;
+	max-width: 40px;
+	max-height: 40px;
+	vertical-align: middle;
+}
